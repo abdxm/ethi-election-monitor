@@ -41,7 +41,6 @@ cp .env.example .env
 python runner.py
 ```
 
-Set `SCRAPE_MODE=sample` for demo posts, or `SCRAPE_MODE=live` with `FACEBOOK_PAGE_URLS` for live scraping.
 
 Re-running `python runner.py` skips duplicates via `source_url` UNIQUE constraint.
 
@@ -62,7 +61,6 @@ Open http://localhost:5173
 |----------|---------------------|--------------------------------|
 | Python   | `DB_HOST`           | localhost                      |
 | Python   | `DB_NAME`           | election_db                    |
-| Python   | `SCRAPE_MODE`       | sample                         |
 | Laravel  | `DB_DATABASE`       | election_db                    |
 | Frontend | `VITE_API_URL`      | http://127.0.0.1:8000/api      |
 
